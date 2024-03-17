@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ebebeb;
+}
+
+.player {
+    margin: 5% auto 0;
+    max-width: 720px;
+    background-color: aqua;
+}
+
+
+.dashboard {
+    margin: 5% auto 0;
+    max-width: 720px;
+    background-color: aqua;
+    background-color: #fff;
+    padding: 16px 16px 14px;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.d_none {
+    display: none;
+    transition: all linear 0.5s;
+}
+
+header {
+    padding: 30px 0;
+    text-align: center;
+}
+
+header>h4 {
+    color: rgb(234, 33, 50);
+}
+
+
+.cd {
+    display: flex;
+    margin: auto;
+    width: 300px;
+}
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    background: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.control {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.btn>i {
+    cursor: pointer;
+}
+.active {
+    color: rgb(248, 115, 6);
+}
+
+.btn-toggle-play {
+    background-color: brown;
+    border-radius: 50%;
+    cursor: pointer;
+    /* Đặt con trỏ là pointer để chỉ ra nút có thể nhấp */
+}
+
+.btn-toggle-play .icon-play {
+    display: inline-block;
+}
+
+.btn-toggle-play .icon-pause {
+    display: none;
+}
+
+.playing .icon-play {
+    display: none;
+}
+
+.playing .icon-pause {
+    display: inline-block;
+}
+
+
+#progress {
+    width: 100%;
+    border: none;
+}
+
+/*  */
+.playlist {
+    /* margin-top: 408px; */
+    padding: 16px;
+    background-color: #ebebeb;
+}
+
+.song {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px 20px;
+    margin-bottom: 10px;
+
+}
+.song.active {
+    background-color: rgb(9, 232, 244);
+    color: #fff;
+
+}
+
+
+.thumb {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.song .body {
+    flex: 1;
+}
